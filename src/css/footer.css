@@ -1,0 +1,49 @@
+h2, h3{
+    font-weight: 100;
+   
+}
+footer{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    padding: 2rem;
+    background-color: #cfcfff;
+}
+
+.container-foot{
+    width: 100%;
+    height: 100%;
+}
+
+
+.items-foot{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 2rem;
+}
+
+.items-foot > img{
+    width: 50%;
+    height: 20vh;
+    object-fit: contain;
+    margin-top: 2rem;
+}
+
+.items-foot>h5{
+    justify-content: left;
+    color: #0c0c0c;
+    width: 100%;
+}
+
+.items-foot> i{
+    font-size: 50px;
+    color: #3b5998;
+}
+
+.items-foot > i:last-child{
+    color: red;
+}
+

@@ -1,0 +1,86 @@
+.container-reservas{
+    width: 50%;
+    height: 100vh;
+
+}
+
+.reservas-form{
+    width: 60%;
+    height: 80%;
+    margin: auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 2rem 2rem 2rem;
+    gap: 0.5rem;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
+}
+
+.reservas-form > .titulo-form-reservas{
+    text-align: center;
+    color: #cfcfff;
+    margin-bottom: 1.5rem;
+}
+
+.reservas-form > .txtinput{
+    border: none;
+    height: 40px;
+    width: 100%;
+    border-bottom: solid 1px #cfcfff;
+    border-color: #cfcfff;
+    font-size: 16px;
+}
+
+.titulo-campo, .titulo-numero-personas, .titulo-fecha{
+    color: #5757577e;
+    cursor: pointer;
+    position: relative;
+    top: -40px;
+    left: 5px;
+    transform: translateY(10px);
+    transition: all .5s, color .3s;
+}
+.titulo-fecha, .titulo-numero-personas{
+    top:-10px;
+}
+
+.valor-persona{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin-bottom: 2rem;
+}
+.valor-persona > #txtpersona{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border: none;
+    color: #cfcfff;
+    
+}
+.valor-persona > .titulo-valor-persona{
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+
+.valor-persona > .titulo-valor-persona>span, #titulo-total > span{
+    color: #04e950dc;
+}
+.txtinput:focus + .titulo-campo, .txtinput:not(:placeholder-shown) + .titulo-campo{
+    transform: translateY(-2px) scale(.7);
+    transform-origin: top left;
+    color: #04e950dc;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+
+.btnreserva{
+    width: 40%;
+    color: white;
+    border: none;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    margin-left: auto;
+    background-color: #04e950dc;
+    height: 40px;
+}

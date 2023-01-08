@@ -1,0 +1,108 @@
+.container-nosotros{
+    width: 100%;
+    height: auto;
+    padding: 1rem 2rem 1rem 2rem;
+    margin-top: 2rem;
+}
+
+.container-item{
+    display: flex;
+    width: 100%;
+    height: 30vh;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    background-color: red;
+}
+
+.container-item:nth-child(2){
+    background-color: yellow;
+}
+
+.container-item:nth-child(3){
+    background-color: darkolivegreen;
+}
+.container-item:nth-child(4){
+    background-color: purple;
+}
+.container-section-number{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    background-color: transparent;
+    justify-content: space-between;
+    position: relative;
+    left: 1%;
+}
+
+.container-section-number>h3{
+    top: 60px;
+    position: relative;
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: auto;
+    width: 100%;
+    height: 60px;
+    line-height: 3;
+    left: -40px;
+    display: inline;
+    transform: rotate(270deg);
+    border-radius: 0 0 20px 0px ;
+}
+
+.container-section-number>h1{
+    color: white;
+    width: 80%;
+    line-height: 2;
+    font-size: 100px;
+    align-items: center;
+    text-align: center;
+}
+
+.container-item>span{
+    width: 10%;
+    height: 100%;
+    background-color:white;
+    border: aolid 1px;
+    position: relative;
+    top: -8%;
+    box-shadow: 1px 10px 10px rgba(0, 0, 0, 1);
+    z-index: 1;
+    transform: rotate(-3deg);
+    display: flex;
+    justify-content: center;
+}
+
+.container-item > span > .fa-solid{
+    color: red;
+    font-size: 70px;
+    margin: auto;
+}
+
+.container-item > .container-section{
+    position: relative;
+    left: -1%;
+    width: 70%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding: .5rem 0rem .5rem 2rem;
+    color: white;
+    overflow: hidden;
+}
+
+.container-section>h2{
+    position: relative;
+    color: black;
+    top: 5px;
+    font-weight: 400;
+    left: 37px;
+    transform: rotate(45deg);
+    background-color: white;
+    height: 60px;
+    line-height: 4;
+    padding: 0 15px 0 15px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 1);
+}

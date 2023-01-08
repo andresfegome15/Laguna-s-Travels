@@ -1,0 +1,246 @@
+.reseña-container{
+    width: 50%;
+    height: 100vh;
+}
+
+.container-review{
+    width: 100%;
+    height: 90%;
+}
+
+.puntaje{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.puntaje > .calificaciones{
+    width: 70%;
+    background-color: white;
+    height: 100%;
+}
+
+.calificaciones > progress{
+    margin: 1rem;
+    width: 90%;
+    float: none;
+    display: inline-block;
+    flex-direction: row;
+}
+
+.puntaje > .promedio-calificacion{
+    width: 30%;
+    height: 100%;
+}
+
+.promedio-calificacion > h1{
+    width: 100%;
+    text-align: center;
+    font-size: 80px;
+    font-weight: bold;
+    color: #FABB05;
+    
+}
+
+.promedio-calificacion > h3{
+    font-size: 20px;
+    color: rgba(74, 212, 74, 0.93);
+    width: 100%;
+    text-align: center;
+}
+
+
+.comentarios{
+    width: 100%;
+    height: 70%;
+    overflow-y: scroll;
+    
+}
+
+.comentarios > .container-comentario{
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 1rem;
+    display: grid;
+    gap: 0.4rem;
+    grid-template-columns: 1fr 7fr;
+
+}
+.container-comentario > span{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    height: 100%;
+    width: 50%;
+    border: none;
+    border-radius: 100%;
+    background-color: #cfcfff;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+.container-comentario > h3{
+    color: black;
+    height: auto;
+    font-weight: 700;
+    grid-column-start: 2;
+    grid-column-end: 9;
+}
+
+.container-comentario > p{
+    grid-column-start:2;
+    grid-column-end: 8;
+    background-color: #cfcfff5a;
+    padding: 0.5rem;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.opcion-comentario{
+    width: 100%;
+    height: 5%;
+    display: flex;
+    margin-top: 0.5rem;
+}
+
+.opcion-comentario > h6{
+    width: 80%;
+    font-size: 18px;
+    padding-left: 1rem;
+    color: #000;
+
+}
+.opcion-comentario > button{
+    border: none;
+    color: white;
+    background-color: rgba(23, 244, 23, 0.865);
+    width: 35px;
+    height: 35px;
+    font-size: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: auto;
+}
+.opcion-comentario > button:hover{
+    background-color: rgba(23, 244, 23, 1.5);
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+}
+
+.modal > .modal-form{
+    width: 60%;
+    height: 70%;
+    border: solid 1px;
+    background-color: #FFFFFF;
+    border-color: #1A73E8;
+    position: relative;
+    z-index: 5;
+    top: 15%;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 2);
+}
+
+.modal > .overload{
+    width: 100%;
+    position: relative;
+    height: 100%;
+    backdrop-filter:blur(4px) ;
+    top: -70%;
+}
+
+
+.form-reseña{
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+}
+
+.form-reseña > h3{
+    font-size: 20px;
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+}
+.form-reseña > label{
+    color: rgba(37, 240, 74, 0.875);
+}
+
+.form-reseña > input{
+    width: 60%;
+    border: none;
+    font-size: 18px;
+}
+
+.form-reseña > .container-stark{
+    width: 100%;
+    height: 10%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.form-reseña>.container-stark > input{
+    visibility: hidden;
+}
+
+.form-reseña > .container-stark > label{
+    font-size: 40px;
+    color: #444;
+    padding: 10px;
+    transition: all 0.3s;
+    text-align: left;
+}
+
+input#rate-1:checked ~ label{
+    color: #fe7;
+    text-shadow: 0 0 20px #952;
+}
+input#rate-2:checked ~ label{
+    color: #fe7;
+    text-shadow: 0 0 20px #952;
+}
+
+input#rate-3:checked ~ label{
+    color: #fe7;
+    text-shadow: 0 0 20px #952;
+}
+
+input#rate-4:checked ~ label{
+    color: #fe7;
+    text-shadow: 0 0 20px #952;
+}
+input#rate-5:checked ~ label{
+    color: #fe7;
+    text-shadow: 0 0 20px #952;
+}
+
+.form-reseña > .container-stark > input:hover ~ label{
+    color: #fe7;
+    cursor: pointer;
+}
+
+.form-reseña > button{
+    width: 40%;
+    display: block;
+    margin: auto;
+    border: none;
+    border-radius: 5px;
+    background-color: #1A73E8;
+    color: #FFFFFF;
+    height: 30px;
+}
+
+

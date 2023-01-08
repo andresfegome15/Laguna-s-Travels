@@ -1,0 +1,40 @@
+.container-welcome{
+    width: 96%;
+    height: 50vh;
+    background-color: #cfcfff;
+    display: flex;
+    padding: 1rem;
+    margin-top: 5vh;
+    margin: 2%;
+}
+
+.welcome-contenido{
+    width: 70%;
+    height: 100%;
+}
+
+.welcome-contenido > h2{
+    width: 100%;
+    text-align: left;
+    color: red;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.welcome-contenido> p{
+    padding: 2rem;
+    color: black;
+}
+
+.welcome-location{
+    width: 30%;
+    height: 100%;
+    border: 0;
+    
+}
+
+.welcome-location > .map{
+    width: 100%;
+    border-radius: 30px;
+    height: 100%;
+}
